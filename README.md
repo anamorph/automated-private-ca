@@ -1,6 +1,6 @@
 # automated-private-ca
 ## TL;DR;
-automated-private-ca is a shell script for dealing with the creation of a Private Certificate Authority in Amazon Certificate Manager (ACM).
+automated-private-ca is a sample Amazon Certificate Manager automation to create your very own Private Certificate Authority in Amazon Certificate Manager (ACM). **This is content is provided as is: a sample to demonstrate the art of possible with ACM PCA - Amazon Certificate Manager Private Certificate Authority.**
 
 ## What ?
 AWS Certificate Manager Private Certificate Authority is a managed private CA service with which you can easily and securely manage your certificate authority infrastructure and your private certificates. ACM PCA provides a highly available private CA service without the investment and maintenance costs of operating your own certificate authority. ACM PCA extends ACM certificate management to private certificates, enabling you to manage public and private certificates in one console.
@@ -22,7 +22,7 @@ As of the last revision of this document, pricing is as follows:
 
 **Private Certificate Authority Operation**
 
-$400 per month for each ACM private CA until you delete the CA.
+**$400** per month for each ACM private CA **until you delete the CA**.
 ACM Private CA operation is pro-rated for partial months based on when you create and delete the CA. You are not charged for a private CA after you delete it. However, if you restore a deleted CA, you are charged for the time between deleting it and restoring it.
 
 **Private Certificates**
@@ -52,14 +52,13 @@ Not enough arguments
 
 usage: private-certificate_authority.sh %profile% %region% %env%
 
-Example: private-certificate_authority.sh nicolas-prod eu-west-1 prod
+Example: private-certificate_authority.sh nicolas eu-west-1 prod
 ```
 
 ### Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
 Please make sure to update tests as appropriate.
 
 ### Reading material
-	- https://aws.amazon.com/blogs/aws/aws-certificate-manager-launches-private-certificate-authority/
-	- https://jamielinux.com/docs/openssl-certificate-authority/introduction.html
+- https://aws.amazon.com/blogs/aws/aws-certificate-manager-launches-private-certificate-authority/
+- https://jamielinux.com/docs/openssl-certificate-authority/introduction.html
